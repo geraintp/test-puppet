@@ -20,6 +20,7 @@ class nginx {
 	}
 	
 	file { '/var/www/cat-pictures/index.html':
+		ensure  => file,
 		content => "Hello, World!",
 	}
 	
